@@ -13,7 +13,7 @@
     - hatch eggs into new animals to breed
 - breed rarer hybrids for more XP
   - higher tier = rarer eggs in shop
-    - tiers: `1`, `2`, `3`, `4`, `5`, `6`
-  - `tier-1` + `tier-1` = `tier-2`
-  - `tier-5` + `tier-5` = `tier-6`
+    - tiers: `I`, `II`, `III`, `IV`, `V`, `VI`
+  - `tier-I` + `tier-I` = `tier-II`
+  - `tier-V` + `tier-V` = `tier-VI`
 - rarities; `Common`, `Uncommon`, `Rare`, `Legendary`, `Mythical`, `Deific`
