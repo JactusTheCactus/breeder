@@ -4,8 +4,8 @@
 - traits define stats
 - NPCs commission breeds
 - hybrids fight in arena
-- fulfill commissions/battle for money
-  - buy eggs with money
-    - hatch eggs into new animals to breed
+1. fulfill commissions/battle for money
+1. buy eggs with money
+1. hatch eggs into new animals to breed
 - breed rarer hybrids for XP
   - higher level = rarer eggs in shop
