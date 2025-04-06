@@ -1,6 +1,8 @@
 # Planned Features
 - Inherited Traits
-  - When inherited traits conflict; cointoss
+  - When inherited traits conflict;
+    - cointoss
+    - rarer traits are less likely to win
 - traits define stats
 - NPCs commission breeds
 - hybrids fight in arena
