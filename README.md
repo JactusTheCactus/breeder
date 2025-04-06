@@ -1,8 +1,17 @@
 # Planned Features
-- Inherited Traits
-  - When inherited traits conflict;
-    - cointoss
-      - rarer traits are less likely to win
+- inherited Traits
+  - 1 trait/slot
+    - when inherited traits conflict;
+      - cointoss
+        - rarer traits are less likely to win
+    - slots:
+      - skin
+      - tail
+      - head
+      - legs
+      - feet
+      - eye #
+      - eye type
   - traits define stats
 - NPCs commission breeds
   - better hybrids = more money
