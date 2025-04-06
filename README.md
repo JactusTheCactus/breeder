@@ -13,10 +13,4 @@
     - hatch eggs into new animals to breed
 - breed rarer hybrids for XP
   - higher level = rarer eggs in shop
-- rarities;
-  - common
-  - uncommon
-  - rare
-  - legendary
-  - mythical
-  - deific
+- rarities; __Common, Uncommon, Rare, Legendary, Mythical, Deific__
