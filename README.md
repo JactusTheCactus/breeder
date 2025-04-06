@@ -5,6 +5,7 @@
       - rarer traits are less likely to win
 - traits define stats
 - NPCs commission breeds
+  - better hybrids = more money
 - hybrids fight in arena
   - win fights to go up in rank
     - ranks: Roman Numerals
