@@ -10,7 +10,7 @@
   - win fights to go up in rank
     - ranks: Roman Numerals
     - higher rank = more rewards
-      - money, eggs, etc.
+      - money, eggs, boosts, discounts(permanent/temporary),  etc.
 - fulfill commissions/battle for money
   - buy eggs with money
     - hatch eggs into new animals to breed
