@@ -1,1 +1,11 @@
-# breeder
+# Planned Features
+- Inherited Traits
+  - When inherited traits conflict; cointoss
+- traits define stats
+- NPCs commission breeds
+- hybrids fight in arena
+- fulfill commissions/battle for money
+  - buy eggs with money
+    - hatch eggs into new animals to breed
+- breed rarer hybrids for XP
+  - higher level = rarer eggs in shop
