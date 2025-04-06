@@ -15,5 +15,4 @@
   - higher tier = rarer eggs in shop
     - tiers: `I`, `II`, `III`, `IV`, `V`, `VI`
   - `tier-I` + `tier-I` = `tier-II`
-  - `tier-V` + `tier-V` = `tier-VI`
   - rarities; `Common`, `Uncommon`, `Rare`, `Legendary`, `Mythical`, `Deific`
