@@ -6,6 +6,23 @@
 - traits define stats
 - NPCs commission breeds
 - hybrids fight in arena
+  - win fights to go up in rank
+    - ranks;
+      - I
+      - II
+      - III
+      - IV
+      - V
+      - VI
+      - VII
+      - VIII
+      - IX
+      - X
+      - XI
+      - XII
+      - XIII
+      - XIV
+      - XV
 - fulfill commissions/battle for money
   - buy eggs with money
     - hatch eggs into new animals to breed
