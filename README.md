@@ -7,7 +7,7 @@
 - NPCs commission breeds
 - hybrids fight in arena
   - win fights to go up in rank
-    - ranks; __I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII, XIII, XIV, XV__
+    - ranks; __I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII__
 - fulfill commissions/battle for money
   - buy eggs with money
     - hatch eggs into new animals to breed
