@@ -14,4 +14,6 @@
 - breed rarer hybrids for more XP
   - higher tier = rarer eggs in shop
     - tiers: __1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12__
+  - tier-1 + tier-1 = tier-2
+  - tier-5 + tier-5 = tier-6
 - rarities; __Common, Uncommon, Rare, Legendary, Mythical, Deific__
