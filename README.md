@@ -12,6 +12,8 @@
       - feet
       - eye #
       - eye type
+      - weapon element: Earth, Fire, Water, Air, Lightning, Light, Dark, Poison
+      - weapon emitter: breath, tail, teeth, claws
   - traits define stats
 - NPCs commission breeds
   - better hybrids = more money
