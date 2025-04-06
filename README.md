@@ -12,5 +12,6 @@
   - buy eggs with money
     - hatch eggs into new animals to breed
 - breed rarer hybrids for XP
-  - higher level = rarer eggs in shop
+  - higher tier = rarer eggs in shop
+    - tiers: __1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12__
 - rarities; __Common, Uncommon, Rare, Legendary, Mythical, Deific__
