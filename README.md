@@ -3,7 +3,7 @@
   - When inherited traits conflict;
     - cointoss
       - rarer traits are less likely to win
-- traits define stats
+  - traits define stats
 - NPCs commission breeds
   - better hybrids = more money
 - hybrids fight in arena
