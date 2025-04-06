@@ -12,7 +12,7 @@
   - buy eggs with money
     - hatch eggs into new animals to breed
 - breed rarer hybrids for more XP
-  - higher tier = rarer eggs in shop
-    - tiers: `I`, `II`, `III`, `IV`, `V`, `VI`
-  - `tier-I` + `tier-I` = `tier-II`
+  - more XP = higher player tier
+    - higher tier = rarer eggs in shop
+      - tiers: `I`, `II`, `III`, `IV`, `V`, `VI`
   - rarities; `Common`, `Uncommon`, `Rare`, `Legendary`, `Mythical`, `Deific`
