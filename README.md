@@ -15,4 +15,4 @@
   - more XP = higher player tier
     - higher tier = rarer eggs in shop
       - tiers: `I`, `II`, `III`, `IV`, `V`, `VI`
-  - rarities; `Common`, `Uncommon`, `Rare`, `Legendary`, `Mythical`, `Deific`
+      - rarities; `Common`, `Uncommon`, `Rare`, `Legendary`, `Mythical`, `Deific`
