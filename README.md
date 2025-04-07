@@ -1,32 +1,64 @@
-# Planned Features
 - inherited Traits
-  - 1 trait/slot
-    - when inherited traits conflict;
-      - cointoss
-        - rarer traits are less likely to win
-    - slots:
-      - skin
-      - tail
-      - head
-      - legs
-      - feet
-      - eye #
-      - eye type
-      - weapon element: Earth, Fire, Water, Air, Lightning, Light, Dark, Poison
-      - weapon emitter: breath, tail, teeth, claws
-  - traits define stats
+    - 1 trait/slot
+        - traits conflict
+            - cointoss
+                - rarer traits less likely
+        - slots
+            - skin
+            - tail
+            - head
+            - legs
+            - feet
+            - eye
+                - amount
+                - type
+            - weapon
+                - element
+                    - Earth
+                    - Fire
+                    - Water
+                    - Air
+                    - Lightning
+                    - Light
+                    - Dark
+                    - Toxic
+                - emitter
+                    - breath
+                    - tail
+                    - teeth
+                    - claws
+    - traits define stats
 - NPCs commission breeds
-  - better hybrids = more money
+    - better hybrids
+        - more money
 - hybrids fight in arena
-  - win fights to go up in rank
-    - ranks: Roman Numerals
-    - higher rank = more rewards
-      - money, eggs, boosts, discounts, etc.
+    - win fights to go up in rank
+        - ranks
+            - Roman Numerals
+        - higher rank
+            - more rewards
+                - money
+                - eggs
+                - boosts
+                - discounts
+                - etc.
 - fulfill commissions/battle for money
-  - buy eggs with money
-    - hatch eggs into new animals to breed
-- breed rarer hybrids for more XP
-  - more XP = higher player tier
-    - higher tier = rarer eggs in shop
-      - tiers: `I`, `II`, `III`, `IV`, `V`, `VI`
-      - rarities; `Common`, `Uncommon`, `Rare`, `Legendary`, `Mythical`, `Deific`
+    - buy eggs with money
+        - hatch eggs into new animals to breed
+- breed rarer hybrids
+    - higher player tier
+        - tiers
+            - I
+            - II
+            - III
+            - IV
+            - V
+            - VI
+        - rarer eggs in shop
+            - rarities
+                - Common
+                - Uncommon
+                - Rare
+                - Legendary
+                - Mythical
+                - Deific
