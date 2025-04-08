@@ -1,64 +1,238 @@
-- inherited Traits
-    - 1 trait/slot
-        - traits conflict
-            - cointoss
-                - rarer traits less likely
-        - slots
-            - skin
-            - tail
-            - head
-            - legs
-            - feet
-            - eye
-                - amount
-                - type
-            - weapon
-                - element
-                    - Earth
-                    - Fire
-                    - Water
-                    - Air
-                    - Lightning
-                    - Light
-                    - Dark
-                    - Toxic
-                - emitter
-                    - breath
-                    - tail
-                    - teeth
-                    - claws
-    - traits define stats
-- NPCs commission breeds
-    - better hybrids
-        - more money
-- hybrids fight in arena
-    - win fights to go up in rank
-        - ranks
-            - Roman Numerals
-        - higher rank
-            - more rewards
-                - money
-                - eggs
-                - boosts
-                - discounts
-                - etc.
-- fulfill commissions/battle for money
-    - buy eggs with money
-        - hatch eggs into new animals to breed
-- breed rarer hybrids
-    - higher player tier
-        - tiers
-            - I
-            - II
-            - III
-            - IV
-            - V
-            - VI
-        - rarer eggs in shop
-            - rarities
-                - Common
-                - Uncommon
-                - Rare
-                - Legendary
-                - Mythical
-                - Deific
+<details>
+    <summary>Inherited Traits</summary>
+    <ul>
+        <details>
+            <summary>1 Trait/Slot</summary>
+            <ul>
+                <details>
+                    <summary>Traits Conflict</summary>
+                    <ul>
+                        <details>
+                            <summary>Cointoss</summary>
+                            <ul>
+                                <details>
+                                    <summary>Rarer Traits Less Likely</summary>
+                                </details>
+                            </ul>
+                        </details>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Slots</summary>
+                    <ul>
+                        <details>
+                            <summary>Skin</summary>
+                        </details>
+                        <details>
+                            <summary>Tail</summary>
+                        </details>
+                        <details>
+                            <summary>Head</summary>
+                        </details>
+                        <details>
+                            <summary>Legs</summary>
+                        </details>
+                        <details>
+                            <summary>Feet</summary>
+                        </details>
+                        <details>
+                            <summary>Eye</summary>
+                            <ul>
+                                <details>
+                                    <summary>Amount</summary>
+                                </details>
+                                <details>
+                                    <summary>Type</summary>
+                                </details>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Weapon</summary>
+                            <ul>
+                                <details>
+                                    <summary>Element</summary>
+                                    <ul>
+                                        <details>
+                                            <summary>Earth</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Fire</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Water</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Air</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Lightning</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Light</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Dark</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Toxic</summary>
+                                        </details>
+                                    </ul>
+                                </details>
+                                <details>
+                                    <summary>Emitter</summary>
+                                    <ul>
+                                        <details>
+                                            <summary>Breath</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Tail</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Teeth</summary>
+                                        </details>
+                                        <details>
+                                            <summary>Claws</summary>
+                                        </details>
+                                    </ul>
+                                </details>
+                            </ul>
+                        </details>
+                    </ul>
+                </details>
+            </ul>
+        </details>
+        <details>
+            <summary>Traits Define Stats</summary>
+        </details>
+    </ul>
+</details>
+<details>
+    <summary>NPCs Commission Breeds</summary>
+    <ul>
+        <details>
+            <summary>Better Hybrids</summary>
+            <ul>
+                <details>
+                    <summary>More Money</summary>
+                </details>
+            </ul>
+        </details>
+    </ul>
+</details>
+<details>
+    <summary>Hybrids Fight In Arena</summary>
+    <ul>
+        <details>
+            <summary>Win Fights To Go Up In Rank</summary>
+            <ul>
+                <details>
+                    <summary>Ranks</summary>
+                    <ul>
+                        <details>
+                            <summary>Roman Numerals</summary>
+                        </details>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Higher Rank</summary>
+                    <ul>
+                        <details>
+                            <summary>More Rewards</summary>
+                            <ul>
+                                <details>
+                                    <summary>Money</summary>
+                                </details>
+                                <details>
+                                    <summary>Eggs</summary>
+                                </details>
+                                <details>
+                                    <summary>Boosts</summary>
+                                </details>
+                                <details>
+                                    <summary>Discounts</summary>
+                                </details>
+                                <details>
+                                    <summary>Etc.</summary>
+                                </details>
+                            </ul>
+                        </details>
+                    </ul>
+                </details>
+            </ul>
+        </details>
+    </ul>
+</details>
+<details>
+    <summary>Fulfill Commisions/Battle For Money</summary>
+    <ul>
+        <details>
+            <summary>Buy Eggs With Money</summary>
+            <ul>
+                <details>
+                    <summary>Hatch Eggs Into New Animals To Breed</summary>
+                </details>
+            </ul>
+        </details>
+    </ul>
+</details>
+<details>
+    <summary>Breed Rarer Hybrids</summary>
+    <ul>
+        <details>
+            <summary>Higher Player Tier</summary>
+            <ul>
+                <details>
+                    <summary>Tiers</summary>
+                    <ul>
+                        <details>
+                            <summary>I</summary>
+                        </details>
+                        <details>
+                            <summary>II</summary>
+                        </details>
+                        <details>
+                            <summary>III</summary>
+                        </details>
+                        <details>
+                            <summary>IV</summary>
+                        </details>
+                        <details>
+                            <summary>V</summary>
+                        </details>
+                        <details>
+                            <summary>VI</summary>
+                        </details>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Rarer Eggs In Shop</summary>
+                    <ul>
+                        <details>
+                            <summary>Rarities</summary>
+                            <ul>
+                                <details>
+                                    <summary>Common</summary>
+                                </details>
+                                <details>
+                                    <summary>Uncommon</summary>
+                                </details>
+                                <details>
+                                    <summary>Rare</summary>
+                                </details>
+                                <details>
+                                    <summary>Legendary</summary>
+                                </details>
+                                <details>
+                                    <summary>Mythical</summary>
+                                </details>
+                                <details>
+                                    <summary>Deific</summary>
+                                </details>
+                            </ul>
+                        </details>
+                    </ul>
+                </details>
+            </ul>
+        </details>
+    </ul>
+</details>
