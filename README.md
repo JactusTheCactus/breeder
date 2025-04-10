@@ -1,5 +1,7 @@
 <details>
-    <summary>Inherited Traits</summary>
+    <summary>
+        Inherited Traits
+    </summary>
 
 - 1 Trait/Slot
     - Traits Conflict
@@ -32,13 +34,17 @@
 - Traits Define Stats
 </details>
 <details>
-    <summary>NPCs Commission Breeds</summary>
+    <summary>
+        NPCs Commission Breeds
+    </summary>
 
 - Better Hybrids
     - More Money
 </details>
 <details>
-    <summary>Hybrids Fight In Arena</summary>
+    <summary>
+        Hybrids Fight In Arena
+    </summary>
 
 - Win Fights To Go Up In Rank
     - Ranks
@@ -52,13 +58,17 @@
             - Etc.
 </details>
 <details>
-    <summary>Fulfill Commisions/Battle For Money</summary>
+    <summary>
+        Fulfill Commisions/Battle For Money
+    </summary>
 
 - Buy Eggs With Money
     - Hatch Eggs Into New Animals To Breed
 </details>
 <details>
-    <summary>Breed Rarer Hybrids</summary>
+    <summary>
+        Breed Rarer Hybrids
+    </summary>
 
 - Higher Player Tier
     - Tiers
