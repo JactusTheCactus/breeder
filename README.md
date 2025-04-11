@@ -13,7 +13,7 @@
     >> Head\
     >> Legs\
     >> Feet\
-    >> Eye
+    >> Eye\
     >>> Amount
     >>> Type
     >>
