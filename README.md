@@ -75,20 +75,21 @@
         Breed Rarer Hybrids
     </summary>
 
-- Higher Player Tier
-    - Tiers
-        - I
-        - II
-        - III
-        - IV
-        - V
-        - VI
-    - Rarer Eggs In Shop
-        - Rarities
-            - Common
-            - Uncommon
-            - Rare
-            - Legendary
-            - Mythical
-            - Deific
+> Higher Player Tier
+>> Tiers
+>>> I\
+>>> II\
+>>> III\
+>>> IV\
+>>> V\
+>>> VI
+>>
+>> Rarer Eggs In Shop
+>>> Rarities
+>>>> Common\
+>>>> Uncommon\
+>>>> Rare\
+>>>> Legendary\
+>>>> Mythical\
+>>>> Deific
 </details>
