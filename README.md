@@ -50,16 +50,17 @@
         Hybrids Fight In Arena
     </summary>
 
-- Win Fights To Go Up In Rank
-    - Ranks
-        - Roman Numerals
-    - Higher Rank
-        - More Rewards
-            - Money
-            - Eggs
-            - Boosts
-            - Discounts
-            - Etc.
+> Win Fights To Go Up In Rank
+>> Ranks
+>>> Roman Numerals
+>>
+>> Higher Rank
+>>> More Rewards
+>>>> Money\
+>>>> Eggs\
+>>>> Boosts\
+>>>> Discounts\
+>>>> Etc.
 </details>
 <details>
     <summary>
