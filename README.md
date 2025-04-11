@@ -14,7 +14,6 @@
     >> Legs\
     >> Feet\
     >> Eye
-    >>
     >>> Amount\
     >>> Type
     >>
