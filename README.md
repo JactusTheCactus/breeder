@@ -12,7 +12,7 @@
     >> Tail\
     >> Head\
     >> Legs\
-    >> Feet
+    >> Feet\
     >> Eye
     >>> Amount
     >>> Type
