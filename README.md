@@ -67,8 +67,8 @@
         Fulfill Commisions/Battle For Money
     </summary>
 
-- Buy Eggs With Money
-    - Hatch Eggs Into New Animals To Breed
+> Buy Eggs With Money
+>> Hatch Eggs Into New Animals To Breed
 </details>
 <details>
     <summary>
