@@ -25,7 +25,7 @@
             >> Lightning\
             >> Light\
             >> Dark\
-            >> Toxic
+            >> Toxic\
             > Emitter
             >> Breath\
             >> Tail\
