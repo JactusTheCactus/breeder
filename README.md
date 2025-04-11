@@ -14,7 +14,7 @@
     >> Legs\
     >> Feet\
     >> Eye
-    >>> Amount\
+    >>> Amount
     >>> Type
     >>>
     >>> Weapon
