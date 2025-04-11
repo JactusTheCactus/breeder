@@ -16,7 +16,7 @@
     >> Eye\
     >>> Amount\
     >>> Type
-    >>
+    >>>
     >>> Weapon
     >>> Element
     >>>> Earth\
