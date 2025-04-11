@@ -27,10 +27,10 @@
                 > Dark\
                 > Toxic
             > Emitter\
-                > Breath\
-                > Tail\
-                > Teeth\
-                > Claws
+            >> Breath\
+            >> Tail\
+            >> Teeth\
+            >> Claws
 - Traits Define Stats
 </details>
 <details>
