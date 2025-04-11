@@ -7,6 +7,7 @@
     > Traits Conflict
     >> Cointoss
     >>> Rarer Traits Less Likely
+    >
     > Slots
     >> Skin\
     >> Tail\
