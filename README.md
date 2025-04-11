@@ -26,7 +26,7 @@
                 > Light\
                 > Dark\
                 > Toxic
-            - Emitter
+            > Emitter
                 > Breath\
                 > Tail\
                 > Teeth\
