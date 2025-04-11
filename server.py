@@ -1,10 +1,13 @@
 import http.server
 import socketserver
-
-PORT = 8000
-
+PORT = 3000
 Handler = http.server.SimpleHTTPRequestHandler
-
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print("serving at port", f'http://localhost:{PORT}/')
-    httpd.serve_forever()
+def serve(port):
+    with socketserver.TCPServer(("", port), Handler) as httpd:
+        print("serving at port", f'http://localhost:{port}/')
+        httpd.serve_forever()
+if PORT:
+    serve(PORT)
+else:
+    input = 'Enter Port #'
+    serve(input)
