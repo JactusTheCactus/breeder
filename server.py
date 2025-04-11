@@ -9,5 +9,5 @@ def serve(port):
 if PORT:
     serve(PORT)
 else:
-    input = int(input('Enter Port #'))
-    serve(input)
+    PORT = int(input('Enter Port #'))
+    serve(PORT)
