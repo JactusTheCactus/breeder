@@ -18,19 +18,19 @@
             - Type
         - Weapon
             - Element
-                - Earth
-                - Fire
-                - Water
-                - Air
-                - Lightning
-                - Light
-                - Dark
-                - Toxic
+                > Earth\
+                > Fire\
+                > Water\
+                > Air\
+                > Lightning\
+                > Light\
+                > Dark\
+                > Toxic
             - Emitter
                 > Breath\
                 > Tail\
                 > Teeth\
-                > Claws\
+                > Claws
 - Traits Define Stats
 </details>
 <details>
