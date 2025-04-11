@@ -8,30 +8,31 @@
         - Cointoss
             - Rarer Traits Less Likely
     - Slots
-        - Skin
-        - Tail
-        - Head
-        - Legs
-        - Feet
-        - Eye
-            - Amount
-            - Type
-        - Weapon
-            > Element
-            >> Earth\
-            >> Fire\
-            >> Water\
-            >> Air\
-            >> Lightning\
-            >> Light\
-            >> Dark\
-            >> Toxic
-            >
-            > Emitter
-            >> Breath\
-            >> Tail\
-            >> Teeth\
-            >> Claws
+        > Skin
+        > Tail
+        > Head
+        > Legs
+        > Feet
+        > Eye
+        >> Amount
+        >> Type
+        >
+        > Weapon
+        >> Element
+        >>> Earth\
+        >>> Fire\
+        >>> Water\
+        >>> Air\
+        >>> Lightning\
+        >>> Light\
+        >>> Dark\
+        >>> Toxic
+        >>
+        >> Emitter
+        >>> Breath\
+        >>> Tail\
+        >>> Teeth\
+        >>> Claws
 - Traits Define Stats
 </details>
 <details>
