@@ -28,8 +28,11 @@
                 - Toxic
             - Emitter
                 > Breath
+
                 > Tail
+
                 > Teeth
+
                 > Claws
 - Traits Define Stats
 </details>
