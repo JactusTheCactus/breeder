@@ -13,8 +13,8 @@
     >> Head\
     >> Legs\
     >> Feet\
-    >> Eye\
-    >>> Amount
+    >> Eye
+    >>> Amount\
     >>> Type
     >>
     >> Weapon\
