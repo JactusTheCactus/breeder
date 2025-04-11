@@ -42,8 +42,8 @@
         NPCs Commission Breeds
     </summary>
 
-- Better Hybrids
-    - More Money
+> Better Hybrids
+>> More Money
 </details>
 <details>
     <summary>
