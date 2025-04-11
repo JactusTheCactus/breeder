@@ -17,9 +17,9 @@
     >>> Amount
     >>> Type
     >>>
-    >> Weapon
+    >> Weapon\
     >> Element
-    >> Earth\
+    >>> Earth\
     >>> Fire\
     >>> Water\
     >>> Air\
