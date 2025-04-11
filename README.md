@@ -17,15 +17,15 @@
             - Amount
             - Type
         - Weapon
-            - Element
-                > Earth\
-                > Fire\
-                > Water\
-                > Air\
-                > Lightning\
-                > Light\
-                > Dark\
-                > Toxic
+            > Element
+            >> Earth\
+            >> Fire\
+            >> Water\
+            >> Air\
+            >> Lightning\
+            >> Light\
+            >> Dark\
+            >> Toxic
             > Emitter
             >> Breath\
             >> Tail\
