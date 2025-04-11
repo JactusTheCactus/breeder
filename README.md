@@ -32,11 +32,11 @@
 >>>>> Claws
 >>
 >> Traits Define Stats
->
+
 > NPCs Commission Breeds
 >> Better Hybrids
 >>> More Money
->
+
 > Hybrids Fight In Arena
 >> Win Fights To Go Up In Rank
 >>> Ranks
@@ -49,11 +49,11 @@
 >>>>> Boosts\
 >>>>> Discounts\
 >>>>> Etc.
->
+
 > Fulfill Commisions/Battle For Money
 >> Buy Eggs With Money
 >>> Hatch Eggs Into New Animals To Breed
->
+
 > Breed Rarer Hybrids
 >> Higher Player Tier
 >>> Tiers
