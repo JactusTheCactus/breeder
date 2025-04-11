@@ -8,13 +8,13 @@
         - Cointoss
             - Rarer Traits Less Likely
     - Slots
-        > Skin
-        > Tail
-        > Head
-        > Legs
-        > Feet
+        > Skin\
+        > Tail\
+        > Head\
+        > Legs\
+        > Feet\
         > Eye
-        >> Amount
+        >> Amount\
         >> Type
         >
         > Weapon
