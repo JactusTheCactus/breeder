@@ -17,34 +17,20 @@
             - Amount
             - Type
         - Weapon
-            > Element
-
-            >> Earth
-
-            >> Fire
-
-            >> Water
-
-            >> Air
-
-            >> Lightning
-
-            >> Light
-
-            >> Dark
-
-            >> Toxic
-
-            > Emitter
-
-            >> Breath
-
-            >> Tail
-
-            >> Teeth
-
-            >> Claws
-
+            - Element
+            -- Earth
+            -- Fire
+            -- Water
+            -- Air
+            -- Lightning
+            -- Light
+            -- Dark
+            -- Toxic
+            - Emitter
+            -- Breath
+            -- Tail
+            -- Teeth
+            -- Claws
 - Traits Define Stats
 </details>
 <details>
