@@ -128,18 +128,20 @@
                     </td>
                 </tr>
             </table>
-        </td>
-    </tr>
-    <tr>
-        <td>NPCs Commission Hybrids</td>
-        <td>
             <table>
                 <tr>
-                    <td>Better Hybrids</td>
+                    <td>NPCs Commission Hybrids</td>
                     <td>
                         <table>
                             <tr>
-                                <td>More Money</td>
+                                <td>Better Hybrids</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>More Money</td>
+                                        </tr>
+                                    </table>
+                                </td>
                             </tr>
                         </table>
                     </td>
