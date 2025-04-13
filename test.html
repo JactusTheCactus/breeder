@@ -147,6 +147,61 @@
                     </td>
                 </tr>
             </table>
+            <table>
+                <tr>
+                    <td>Hybrids Fight In The Arena</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Win Fights To Go Up In Rank</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>Ranks</td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>Roman Numerals</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Higher Rank</td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>More Rewards</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>Money</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Eggs</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Boosts</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Discounts</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Etc.</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
 </table>
