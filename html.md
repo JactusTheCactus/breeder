@@ -202,6 +202,98 @@
                     </td>
                 </tr>
             </table>
+            <table>
+                <tr>
+                    <td>Fulfill Commissions/Battle For Money</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Buy Eggs With Money</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>Hatch Eggs Into New Animals To Breed</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Breed Rarer Hybrids</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Increase Player Tier</td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>Tiers</td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>I</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>II</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>III</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IV</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>V</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>VI</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rarer Eggs In Shop</td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>Rarities</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>Common</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Uncommon</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Rare</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Legendary</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Mythical</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Deific</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
 </table>
