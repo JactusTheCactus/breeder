@@ -51,12 +51,78 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Eye</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>Amount</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Type</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Weapon</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Element</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>Earth</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Fire</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Water</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Air</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Lightning</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Light</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Dark</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Toxic</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Emitter</td>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>Breath</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tail</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Teeth</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Claws</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td>Traits Define Stats</td>
                             </tr>
                         </table>
                     </td>
