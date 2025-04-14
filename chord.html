@@ -127,7 +127,6 @@
                 item.setAttribute("font-weight", weight);
                 item.setAttribute("font-style", style);
                 item.setAttribute("data-point", i);
-                item.setAttribute("dy", dy);
                 labelEl.appendChild(item);
             }
             const connectList = [];
@@ -142,12 +141,12 @@
             const incoming = connections.filter(([_, target]) => target === i).length;
             const outgoing = connections.filter(([source]) => source === i).length;
             const tspanData = [
-                [label, "bold", 'normal', 0],
-                [" | ", "normal", "normal", 0],
-                [outgoing - incoming, "normal", "italic", 10]
+                [label, "bold", 'normal'],
+                [" | ", "normal", "normal"],
+                [outgoing - incoming, "normal", "italic"]
             ];
             tspanData.forEach(item => {
-                tspanFormat(item[0], item[1], item[2], item[3]);
+                tspanFormat(item[0], item[1], item[2]);
             });
             labelEl.style.fontSize = '3em';
             svg.appendChild(labelEl);
