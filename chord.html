@@ -142,7 +142,8 @@
             const outgoing = connections.filter(([source]) => source === i).length;
             const tspanData = [
                 [label, "bold", 'normal'],
-                [` | ${outgoing - incoming}`, "normal", 'italic']
+                [" | ", "normal", "normal"],
+                [outgoing - incoming, "normal", "italic"]
             ];
             tspanData.forEach(item => {
                 tspanFormat(item[0], item[1], item[2]);
