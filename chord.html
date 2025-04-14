@@ -200,14 +200,14 @@
                     return Number(l.dataset.source) === target && Number(l.dataset.target) === source;
                 });
                 if (reverseExists) {
-                    line.style.stroke = "purple";
+                    line.style.stroke = "#80f";
                     line.setAttribute("marker-end", "url(#purple-arrow)");
                 } else {
                     if (source === clickedIndex) {
-                        line.style.stroke = "blue";
+                        line.style.stroke = "#00f";
                         line.setAttribute("marker-end", "url(#blue-arrow)");
                     } else if (target === clickedIndex) {
-                        line.style.stroke = "red";
+                        line.style.stroke = "#f00";
                         line.setAttribute("marker-end", "url(#red-arrow)");
                     }
                 }
