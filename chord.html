@@ -129,7 +129,7 @@
     item.setAttribute("dy", dy); // vertical shift — use "1.2em" or similar to move to next line
     if (size) item.setAttribute("font-size", size);
     if (fill) item.setAttribute("fill", fill);
-    item.setAttribute("x", labelEl.getAttribute("x")); // reset x so it doesn't indent
+    if (!dy) {item.setAttribute("x", labelEl.getAttribute("x"));} // reset x so it doesn't indent
     item.setAttribute("data-point", i);
     labelEl.appendChild(item);
 }
