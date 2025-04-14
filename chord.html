@@ -13,7 +13,7 @@
 
         text {
             font-family: sans-serif;
-            font-size: 14px;
+            font-size: 20px;
         }
 
         line {
@@ -72,6 +72,17 @@
             [8, 0],
             [8, 2]
         ];
+        // Initialize counters
+        const counts = labels.map(() => ({ incoming: 0, outgoing: 0 }));
+        // Count incoming and outgoing lines
+        connections.forEach(([source, target]) => {
+            counts[source].outgoing += 1;
+            counts[target].incoming += 1;
+        });
+        // Output the counts
+        labels.forEach((label, i) => {
+            console.log(`${label}: Incoming = ${counts[i].incoming}, Outgoing = ${counts[i].outgoing}`);
+        });
         const svg = document.getElementById("chart");
         svg.setAttribute("width", window.innerWidth * 0.9);
         svg.setAttribute("height", window.innerHeight * 0.9);
@@ -126,8 +137,11 @@
                 }
             });
             const count = connectList.length;
+            const incoming = connections.filter(([_, target]) => target === i).length;
+            const outgoing = connections.filter(([source]) => source === i).length;
             const tspanData = [
-                [`${label}`, "bold", 'normal']
+                [label, "bold", 'normal'],
+                [` | ${outgoing - incoming}`, "normal", 'italic']
             ];
             tspanData.forEach(item => {
                 tspanFormat(item[0], item[1], item[2]);
@@ -169,11 +183,13 @@
             // Remove italics from all labels
             document.querySelectorAll("text tspan").forEach(tspan => {
                 tspan.setAttribute("font-style", "normal");
+                tspan.setAttribute('font-size','1em')
             });
             const clickedIndex = Number(this.getAttribute("data-point"));
             // Italicize the clicked label
             document.querySelectorAll(`text tspan[data-point="${clickedIndex}"]`).forEach(tspan => {
                 tspan.setAttribute("font-style", "italic");
+                tspan.setAttribute('font-size','1.5em')
             });
             // Highlight relevant lines
             drawnLines.forEach(line => {
