@@ -121,12 +121,13 @@
                 labelEl.setAttribute("text-anchor", x < centerX ? "end" : "start");
             }
             // Create tspan elements for the label details
-            function tspanFormat(text = '', weight = 'normal', style = 'normal') {
+            function tspanFormat(text = '', weight = 'normal', style = 'normal', dy = 0) {
                 const item = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
                 item.textContent = text;
                 item.setAttribute("font-weight", weight);
                 item.setAttribute("font-style", style);
-                item.setAttribute("data-point", i); // store the index
+                item.setAttribute("data-point", i);
+                item.setAttribute("dy", dy);
                 labelEl.appendChild(item);
             }
             const connectList = [];
@@ -141,9 +142,9 @@
             const incoming = connections.filter(([_, target]) => target === i).length;
             const outgoing = connections.filter(([source]) => source === i).length;
             const tspanData = [
-                [label, "bold", 'normal'],
-                [" | ", "normal", "normal"],
-                [outgoing - incoming, "normal", "italic"]
+                [label, "bold", 'normal', 0],
+                [" | ", "normal", "normal", 0],
+                [outgoing - incoming, "normal", "italic", 10]
             ];
             tspanData.forEach(item => {
                 tspanFormat(item[0], item[1], item[2]);
