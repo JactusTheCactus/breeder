@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Custom Spider Chart</title>
+    <title>Type Chart</title>
     <style>
         body {
             display: flex;
@@ -17,18 +17,34 @@
         }
 
         line {
-            stroke: #4a90e2;
+            stroke: #888888;
             stroke-width: 2;
         }
 
         circle {
-            fill: #4a90e2;
+            fill: #444;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <svg id="chart"></svg>
+    <svg id="chart">
+        <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#888" />
+            </marker>
+            <marker id="red-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#f00" />
+            </marker>
+            <marker id="blue-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#00f" />
+            </marker>
+            <marker id="purple-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#80f" />
+            </marker>
+        </defs>
+    </svg>
     <script>
         const labels = [
             "Fire",
@@ -41,10 +57,12 @@
             "Air",
             "Dark"
         ];
+        // Each connection is defined as [source, target]
         const connections = [
             [0, 7],
             [4, 0],
             [6, 8],
+            [8, 6],
             [4, 1],
             [2, 1],
             [3, 7],
@@ -54,63 +72,78 @@
             [8, 0],
             [8, 2]
         ];
-        var svg = document.getElementById("chart");
+        const svg = document.getElementById("chart");
         svg.setAttribute("width", window.innerWidth * 0.9);
         svg.setAttribute("height", window.innerHeight * 0.9);
-        const centerX = svg.getAttribute('width') / 2
-        const centerY = svg.getAttribute('height') / 2
-        var radius = 0;
-        if (svg.getAttribute('width') > svg.getAttribute('height')) {
-            radius = svg.getAttribute('height')
-        } else if (svg.getAttribute('width') < svg.getAttribute('height')) {
-            radius = svg.getAttribute('width')
-        };
-        radius = radius * 0.9 / 4;
+        const centerX = svg.getAttribute('width') / 2;
+        const centerY = svg.getAttribute('height') / 2;
+        let radius = Math.min(centerX, centerY) * 0.9 / 2;
         const pointCoords = [];
+        // Create a lookup for lines later
+        const drawnLines = [];
         // Place points around the circle
         labels.forEach((label, i) => {
             const angle = (2 * Math.PI / labels.length) * i - Math.PI / 2;
             const x = centerX + radius * Math.cos(angle);
             const y = centerY + radius * Math.sin(angle);
             pointCoords.push({ x, y });
-            // Draw point
-            const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-            dot.setAttribute("cx", x);
-            dot.setAttribute("cy", y);
-            dot.setAttribute("r", 5);
-            svg.appendChild(dot);
-            // Label
-            var count = 0
+            // Create label text
             const labelEl = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            const labelOffset = 1
             labelEl.setAttribute("x", x);
             labelEl.setAttribute("y", y);
-            labelEl.setAttribute("dy", "0.35em");
-            labelEl.setAttribute("text-anchor", x < centerX ? "end" : "start");
-            connections.forEach(connection => {
-                if (connection.includes(i)) {
-                    count++;
-                };
-            }); function tspanFormat(text='', weight='normal', style='normal') {
+            if (x > window.innerWidth / 2) {
+                labelEl.setAttribute("dx", `${labelOffset}em`);
+            } else if (x < window.innerWidth / 2) {
+                labelEl.setAttribute("dx", `-${labelOffset}em`);
+            }
+            if (y > window.innerHeight / 2) {
+                labelEl.setAttribute("dy", `${labelOffset}em`);
+            } else if (y < window.innerHeight / 2) {
+                labelEl.setAttribute("dy", `-${labelOffset}em`);
+            }
+            // Adjust text-anchor based on x position relative to center
+            if (Math.abs(x - centerX) < 10) {
+                labelEl.setAttribute("text-anchor", "middle");
+            } else {
+                labelEl.setAttribute("text-anchor", x < centerX ? "end" : "start");
+            }
+            // Create tspan elements for the label details
+            function tspanFormat(text = '', weight = 'normal', style = 'normal') {
                 const item = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
                 item.textContent = text;
                 item.setAttribute("font-weight", weight);
                 item.setAttribute("font-style", style);
+                item.setAttribute("data-point", i); // store the index
                 labelEl.appendChild(item);
             }
-            const tspan = [
-                [`${label}`, 1000, 'normal'],
-                [`: `, 'normal', 'normal'],
-                [`#${i}`, 'normal', 'italic'],
-                [`, `, 'normal', 'normal'],
-                [`${count} points`, 700, 'normal']
-            ];
-            tspan.forEach(item => {
-                tspanFormat(item[0], item[1], item[2])
+            const connectList = [];
+            connections.forEach(connection => {
+                if (connection[0] === i && !connectList.includes(connection[1])) {
+                    connectList.push(connection[1]);
+                } else if (connection[1] === i && !connectList.includes(connection[0])) {
+                    connectList.push(connection[0]);
+                }
             });
-            labelEl.style.fontSize = '2em'
+            const count = connectList.length;
+            const tspanData = [
+                [`${label}`, "bold", 'normal']
+            ];
+            tspanData.forEach(item => {
+                tspanFormat(item[0], item[1], item[2]);
+            });
+            labelEl.style.fontSize = '3em';
             svg.appendChild(labelEl);
+            // Create a circle at the point and add a click listener
+            const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("cx", x);
+            circle.setAttribute("cy", y);
+            circle.setAttribute("r", 8);
+            circle.setAttribute("data-point", i); // store the index
+            circle.addEventListener("click", onPointClick);
+            svg.appendChild(circle);
         });
-        // Draw lines between connected points
+        // Draw lines between connected points with data attributes for source and target
         connections.forEach(([a, b]) => {
             const { x: x1, y: y1 } = pointCoords[a];
             const { x: x2, y: y2 } = pointCoords[b];
@@ -119,8 +152,51 @@
             line.setAttribute("y1", y1);
             line.setAttribute("x2", x2);
             line.setAttribute("y2", y2);
+            line.setAttribute("marker-end", "url(#arrow)");
+            // Store the connection direction on the line
+            line.dataset.source = a;
+            line.dataset.target = b;
             svg.appendChild(line);
+            drawnLines.push(line);
         });
+        // Click handler for a point
+        function onPointClick(e) {
+            // Reset all lines to the default color
+            drawnLines.forEach(line => {
+                line.style.stroke = "#888888"
+                line.setAttribute("marker-end", "url(#arrow)");
+            });
+            // Remove italics from all labels
+            document.querySelectorAll("text tspan").forEach(tspan => {
+                tspan.setAttribute("font-style", "normal");
+            });
+            const clickedIndex = Number(this.getAttribute("data-point"));
+            // Italicize the clicked label
+            document.querySelectorAll(`text tspan[data-point="${clickedIndex}"]`).forEach(tspan => {
+                tspan.setAttribute("font-style", "italic");
+            });
+            // Highlight relevant lines
+            drawnLines.forEach(line => {
+                const source = Number(line.dataset.source);
+                const target = Number(line.dataset.target);
+                if (source !== clickedIndex && target !== clickedIndex) return;
+                const reverseExists = drawnLines.some(l => {
+                    return Number(l.dataset.source) === target && Number(l.dataset.target) === source;
+                });
+                if (reverseExists) {
+                    line.style.stroke = "purple";
+                    line.setAttribute("marker-end", "url(#purple-arrow)");
+                } else {
+                    if (source === clickedIndex) {
+                        line.style.stroke = "blue";
+                        line.setAttribute("marker-end", "url(#blue-arrow)");
+                    } else if (target === clickedIndex) {
+                        line.style.stroke = "red";
+                        line.setAttribute("marker-end", "url(#red-arrow)");
+                    }
+                }
+            });
+        }
     </script>
 </body>
 
