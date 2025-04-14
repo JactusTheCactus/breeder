@@ -85,11 +85,11 @@
             console.log(`${label}: Incoming = ${counts[i].incoming}, Outgoing = ${counts[i].outgoing}`);
         });
         const svg = document.getElementById("chart");
-        svg.setAttribute("width", window.innerWidth * 0.9);
-        svg.setAttribute("height", window.innerHeight * 0.9);
+        svg.setAttribute("width", window.innerWidth);
+        svg.setAttribute("height", window.innerHeight);
         const centerX = svg.getAttribute('width') / 2;
         const centerY = svg.getAttribute('height') / 2;
-        let radius = Math.min(centerX, centerY) * 0.9 / 2;
+        let radius = Math.min(centerX, centerY) / 2;
         const pointCoords = [];
         // Create a lookup for lines later
         const drawnLines = [];
