@@ -121,15 +121,13 @@
                 labelEl.setAttribute("text-anchor", x < centerX ? "end" : "start");
             }
             // Create tspan elements for the label details
-            function tspanFormat(text = '', weight = 'normal', style = 'normal', dy = '0', size = null, fill = null) {
+            function tspanFormat(text = '', weight = 'normal', style = 'normal', dy = '0') {
     const item = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
     item.textContent = text;
     item.setAttribute("font-weight", weight);
     item.setAttribute("font-style", style);
     item.setAttribute("dy", dy); // vertical shift — use "1.2em" or similar to move to next line
-    if (size) item.setAttribute("font-size", size);
-    if (fill) item.setAttribute("fill", fill);
-    if (!dy) {item.setAttribute("x", labelEl.getAttribute("x"));} // reset x so it doesn't indent
+    item.setAttribute("x", labelEl.getAttribute("x")); // reset x so it doesn't indent
     item.setAttribute("data-point", i);
     labelEl.appendChild(item);
 }
