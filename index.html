@@ -121,16 +121,16 @@
                 labelEl.setAttribute("text-anchor", x < centerX ? "end" : "start");
             }
             // Create tspan elements for the label details
-            function tspanFormat(text = '', weight = 'normal', style = 'normal', dy = '0') {
-    const item = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-    item.textContent = text;
-    item.setAttribute("font-weight", weight);
-    item.setAttribute("font-style", style);
-    item.setAttribute("dy", dy); // vertical shift — use "1.2em" or similar to move to next line
-    item.setAttribute("x", labelEl.getAttribute("x")); // reset x so it doesn't indent
-    item.setAttribute("data-point", i);
-    labelEl.appendChild(item);
-}
+            function tspanFormat(text = '', weight = 'normal', style = 'normal', dy = 0) {
+                const item = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+                item.textContent = text;
+                item.setAttribute("font-weight", weight);
+                item.setAttribute("font-style", style);
+                item.setAttribute("data-point", i);
+                item.setAttribute("dy", `${dy * 1}em`);
+                item.setAttribute("x", labelEl.getAttribute("x"))
+                labelEl.appendChild(item);
+            }
             const connectList = [];
             connections.forEach(connection => {
                 if (connection[0] === i && !connectList.includes(connection[1])) {
@@ -142,13 +142,12 @@
             const count = connectList.length;
             const incoming = connections.filter(([_, target]) => target === i).length;
             const outgoing = connections.filter(([source]) => source === i).length;
-            const tspanData = [
-                [label, "bold", 'normal'],
-                [" | ", "normal", "normal"],
-                [outgoing - incoming, "normal", "italic", "1em"]
-            ];
-            tspanData.forEach(item => {
-                tspanFormat(item[0], item[1], item[2]);
+            const tspanData = {
+                label: [label, "bold", 'normal', 0],
+                score: [outgoing - incoming, "normal", "italic", 1]
+            };
+            Object.values(tspanData).forEach(item => {
+                tspanFormat(item[0], item[1], item[2], item[3]);
             });
             labelEl.style.fontSize = '3em';
             svg.appendChild(labelEl);
@@ -187,13 +186,13 @@
             // Remove italics from all labels
             document.querySelectorAll("text tspan").forEach(tspan => {
                 tspan.setAttribute("font-style", "normal");
-                tspan.setAttribute('font-size','1em')
+                tspan.setAttribute('font-size', '1em')
             });
             const clickedIndex = Number(this.getAttribute("data-point"));
             // Italicize the clicked label
             document.querySelectorAll(`text tspan[data-point="${clickedIndex}"]`).forEach(tspan => {
                 tspan.setAttribute("font-style", "italic");
-                tspan.setAttribute('font-size','1.5em')
+                tspan.setAttribute('font-size', '1.5em')
             });
             // Highlight relevant lines
             drawnLines.forEach(line => {
