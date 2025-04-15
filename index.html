@@ -10,6 +10,7 @@
             justify-content: center;
             padding-top: 50px;
             background-color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         text {
@@ -25,10 +26,122 @@
             fill: #444;
             cursor: pointer;
         }
+
+        table,
+        td,
+        th {
+            border: #444, solid;
+        }
+
+        #red {
+            background-color: #f00;
+            color: #fff;
+        }
+
+        #orange {
+            background-color: #f80;
+            color: #fff;
+        }
+
+        #yellow {
+            background-color: #ff0;
+            color: #000;
+        }
+
+        #green {
+            background-color: #0f0;
+            color: #fff;
+        }
+
+        #blue {
+            background-color: #00f;
+            color: #fff;
+        }
+
+        #purple {
+            background-color: #80f;
+            color: #fff;
+        }
+
+        #white {
+            background-color: #fff;
+            color: #000;
+        }
+
+        #grey {
+            background-color: #888;
+            color: #fff;
+        }
+
+        #black {
+            background-color: #000;
+            color: #fff;
+        }
     </style>
 </head>
 
 <body>
+    <div>
+        <h1>Elemental Type Chart</h1>
+        <p>
+            Click points to see relationships
+        </p>
+        <table>
+            <tr>
+                <th colspan="100%">Key</th>
+            </tr>
+            <tr>
+                <th colspan="3">On-Click</th>
+                <td rowspan="100%"></td>
+                <th colspan="3">Default</th>
+            </tr>
+            <tr>
+                <th id="red" rowspan="2">Red</th>
+                <td colspan="2">Take <span style="color:#f00;">More</span> Damage From</td>
+                <th style="background-color:#555;color:#fff;">TEXT</th>
+                <td colspan="2">Element Name</td>
+            </tr>
+            <tr>
+                <td colspan="2">Deal <span style="color:#f00;">Less</span> Damage To</td>
+                <th rowspan="6" style="color:#fff;">
+                    <div id="red">#</div>
+                    <div id="orange">#</div>
+                    <div id="yellow">#</div>
+                    <div id="green">#</div>
+                    <div id="blue">#</div>
+                    <div id="purple">#</div>
+                    <div id="white">#</div>
+                    <div id="grey">#</div>
+                    <div id="black">#</div>
+                </th>
+                <td rowspan="6" style="text-align: right;">
+                    <pre>
+Strong Against
+- Weak Against
+</pre>
+                    <hr>
+                    <pre>
+Element Score (ES)
+</pre>
+                </td>
+                <td rowspan="6">+ES: Good<br>-ES: Bad</td>
+            </tr>
+            <tr>
+                <th id="blue" rowspan="2">Blue</th>
+                <td colspan="2">Take <span style="color:#0f0;">Less</span> Damage From</td>
+            </tr>
+            <tr>
+                <td colspan="2">Deal <span style="color:#0f0;">More</span> Damage To</td>
+            </tr>
+            <tr>
+                <th id="purple" rowspan="2">Purple</th>
+                <td colspan="2">Take <span style="color:#f00;">More</span> Damage From</td>
+            </tr>
+            <tr>
+                <td colspan="2">Deal <span style="color:#0f0;">More</span> Damage To</td>
+            </tr>
+        </table>
+    </div>
     <svg id="chart">
         <defs>
             <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -81,15 +194,15 @@
         const em = body.getAttribute("font-size");
         console.log(`${em}px`);
         const labels = [
-            ["Fire","red"],
-            ["Earth","orange"],
-            ["Lightning","yellow"],
-            ["Toxic","green"],
-            ["Water","blue"],
-            ["Undead","purple"],
-            ["Light","white"],
-            ["Air","grey"],
-            ["Dark","black"]
+            ["Fire", "red"],
+            ["Earth", "orange"],
+            ["Lightning", "yellow"],
+            ["Toxic", "green"],
+            ["Water", "blue"],
+            ["Undead", "purple"],
+            ["Light", "white"],
+            ["Air", "grey"],
+            ["Dark", "black"]
         ];
         const connections = [
             [0, 7], [4, 0], [6, 8], [8, 6], [4, 1], [2, 1], [3, 7],
@@ -101,8 +214,13 @@
             counts[target].incoming += 1;
         });
         const svg = document.getElementById("chart");
-        svg.setAttribute("width", window.innerWidth);
-        svg.setAttribute("height", window.innerHeight);
+        if (window.innerHeight > window.innerWidth) {
+            svg.setAttribute("width", window.innerWidth);
+            svg.setAttribute("height", window.innerWidth);
+        } else if (window.innerHeight < window.innerWidth) {
+            svg.setAttribute("width", window.innerHeight);
+            svg.setAttribute("height", window.innerHeight);
+        }
         const centerX = svg.getAttribute('width') / 2;
         const centerY = svg.getAttribute('height') / 2;
         let radius = Math.min(centerX, centerY) / 2;
@@ -122,8 +240,11 @@
             const incoming = connections.filter(([_, target]) => target === i).length;
             const outgoing = connections.filter(([source]) => source === i).length;
             badge.setAttribute("href", badgify([label, outgoing - incoming, colour])); // use your desired color
-            badge.setAttribute("x", x - 60); // adjust to center
-            badge.setAttribute("y", y - 20);
+            const badgeRadius = radius + 80; // push it farther out
+            const badgeX = centerX + badgeRadius * Math.cos(angle);
+            const badgeY = centerY + badgeRadius * Math.sin(angle);
+            badge.setAttribute("x", badgeX - 60); // adjust to center
+            badge.setAttribute("y", badgeY - 20);
             badge.setAttribute("width", 120); // control size
             badge.setAttribute("height", 40);
             badge.setAttribute("data-point", i);
