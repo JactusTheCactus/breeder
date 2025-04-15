@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,50 +47,20 @@
         </defs>
     </svg>
     <script>
-        function badgify([label, number, colour]) {
-            const colours = {
-                white: 'fff',
-                grey: '888',
-                black: '000',
-                red: 'f00',
-                orange: 'f80',
-                yellow: 'ff0',
-                green: '0f0',
-                blue: '00f',
-                purple: '80f',
-                pink: 'f0f',
-            };
-            label = label || 'Badge';
-            colour = colour || 'white';
-            if (number < 0) {
-                number = `--${number}`
-            } else {
-                number = `-${number}`
-            }
-            label = `${label}${number}`
-            const hex = colours[colour.toLowerCase()] || 'fff';
-            const format = (content, style) => `${content}?style=${style}`;
-            const join = (input, divider) => input.filter(Boolean).join(divider);
-            const badgeText = join([label.charAt(0).toUpperCase() + label.slice(1), hex], '-');
-            const badgeUrl = format(`https://img.shields.io/badge/${badgeText}`, 'for-the-badge');
-            const badge = badgeUrl
-            console.log(badge)
-            return badge
-        }
         const body = document.body;
         body.setAttribute("font-size", 20);
         const em = body.getAttribute("font-size");
         console.log(`${em}px`);
         const labels = [
-            ["Fire","red"],
-            ["Earth","orange"],
-            ["Lightning","yellow"],
-            ["Toxic","green"],
-            ["Water","blue"],
-            ["Undead","purple"],
-            ["Light","white"],
-            ["Air","grey"],
-            ["Dark","black"]
+            "Fire",
+            "Earth",
+            "Lightning",
+            "Toxic",
+            "Water",
+            "Undead",
+            "Light",
+            "Air",
+            "Dark"
         ];
         const connections = [
             [0, 7], [4, 0], [6, 8], [8, 6], [4, 1], [2, 1], [3, 7],
@@ -108,7 +79,7 @@
         let radius = Math.min(centerX, centerY) / 2;
         const pointCoords = [];
         const drawnLines = [];
-        labels.forEach(([label, colour], i) => {
+        labels.forEach((label, i) => {
             const angle = (2 * Math.PI / labels.length) * i - Math.PI / 2;
             const x = centerX + radius * Math.cos(angle);
             const y = centerY + radius * Math.sin(angle);
@@ -118,17 +89,42 @@
             labelEl.setAttribute("y", y);
             labelEl.setAttribute("text-anchor", "middle");
             // Determine dx/dy offset based on quadrant
-            const badge = document.createElementNS("http://www.w3.org/2000/svg", "image");
+            function labelPos(x, y) {
+                const offset = 1.5;
+                const svgWidth = svg.getAttribute("width");
+                const svgHeight = svg.getAttribute("height");
+                const dx = x > svgWidth / 2 ? offset : x < svgWidth / 2 ? -offset : 0;
+                const dy = y > svgHeight / 2 ? offset : y < svgHeight / 2 ? -offset : 0;
+                return { dx, dy };
+            }
+            // Create tspan element with position offset
+            function tspanFormat(text = '', weight = 'normal', style = 'normal', delY = 0) {
+                const item = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+                item.textContent = text;
+                var { dx, dy } = labelPos(x, y);
+                const dyOffset = delY === 0 ? 0 : delY * 2;
+                item.setAttribute("font-weight", weight);
+                item.setAttribute("font-style", style);
+                item.setAttribute("data-point", i);
+                item.setAttribute("x", x);
+                if (item.getAttribute("font-style") === "italic") {
+                    dy = -dy
+                }
+                item.setAttribute("dx", `${dx}em`);
+                item.setAttribute("dy", `${dy}em`);
+                labelEl.appendChild(item);
+            }
             const incoming = connections.filter(([_, target]) => target === i).length;
             const outgoing = connections.filter(([source]) => source === i).length;
-            badge.setAttribute("href", badgify([label, outgoing - incoming, colour])); // use your desired color
-            badge.setAttribute("x", x - 60); // adjust to center
-            badge.setAttribute("y", y - 20);
-            badge.setAttribute("width", 120); // control size
-            badge.setAttribute("height", 40);
-            badge.setAttribute("data-point", i);
-            badge.setAttribute("alt", label)
-            svg.appendChild(badge);
+            const tspanData = {
+                label: [`${label}`, "bold", 'normal', 0],
+                score: [`${outgoing - incoming}`, "normal", "italic", 1]
+            };
+            Object.values(tspanData).forEach(item => {
+                tspanFormat(item[0], item[1], item[2], item[3]);
+            });
+            labelEl.style.fontSize = '3em';
+            svg.appendChild(labelEl);
             const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
             circle.setAttribute("cx", x);
             circle.setAttribute("cy", y);
@@ -191,3 +187,4 @@
 </body>
 
 </html>
+```

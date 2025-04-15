@@ -1,299 +1,256 @@
-<table>
-    <tr>
-        <td>Hybrid Breeder</td>
-        <td>
-            <table>
-                <tr>
-                    <td>Inherited Traits</td>
-                    <td>
+<body>
+    <ul>
+        <li>
+            <img src='https://img.shields.io/badge/Hybrid Breeder-fff?style=for-the-badge' alt='Hybrid Breeder'>
+        </li>
+        <ul>
+            <li>
+                <img src='https://img.shields.io/badge/Inherited Traits-fff?style=for-the-badge' alt='Inherited Traits'>
+            </li>
+            <ul>
+                <li>
+                    <img src='https://img.shields.io/badge/1 Trait/Slot-fff?style=for-the-badge' alt='1 Trait/Slot'>
+                </li>
+                <ul>
+                    <li>
+                        <img src='https://img.shields.io/badge/Traits Conflict-fff?style=for-the-badge'
+                            alt='Traits Conflict'>
+                    </li>
+                    <ul>
+                        <li>
+                            <img src='https://img.shields.io/badge/Cointoss-fff?style=for-the-badge' alt='Cointoss'>
+                        </li>
+                        <ul>
+                            <li>
+                                <img src='https://img.shields.io/badge/Rarer Traits Are Less Likely-fff?style=for-the-badge'
+                                    alt='Rarer Traits Are Less Likely'>
+                            </li>
+                        </ul>
+                    </ul>
+                    <li>
                         <table>
                             <tr>
-                                <td>1 Trait/Slot</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>Traits Conflict</td>
-                                            <td>
-                                                <table>
-                                                    <tr>
-                                                        <td>Cointoss</td>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td>Rarer Traits Are Less Likely</td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <table>
-                                        <tr>
-                                            <td>Slots</td>
-                                            <td>
-                                                <table>
-                                                    <tr>
-                                                        <td><kbd>Skin</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Tail</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Head</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Legs</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Feet</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Eye</kbd></td>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td><kbd>Amount</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Type</kbd></td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Weapon</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>Element</kbd></td>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td><kbd>Earth</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Fire</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Water</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Air</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Lightning</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Light</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Dark</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Toxic</kbd></td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Emitter</td>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td><kbd>Breath</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Tail</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Teeth</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Claws</kbd></td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <th rowspan=100%>
+                                    <img src='https://img.shields.io/badge/Slots-fff?style=for-the-badge' alt='Slots'>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan=100%>
+                                    <img src='https://img.shields.io/badge/Skin-fff?style=for-the-badge' alt='Skin'>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Traits Define Stats</td>
+                                <td colspan=100%>
+                                    <img src='https://img.shields.io/badge/Tail-fff?style=for-the-badge' alt='Tail'>
+                                </td>
                             </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>NPCs Commission Hybrids</td>
-                    <td>
-                        <table>
                             <tr>
-                                <td>Better Hybrids</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>More Money</td>
-                                        </tr>
-                                    </table>
+                                <td colspan=100%>
+                                    <img src='https://img.shields.io/badge/Head-fff?style=for-the-badge' alt='Head'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=100%>
+                                    <img src='https://img.shields.io/badge/Legs-fff?style=for-the-badge' alt='Legs'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=100%>
+                                    <img src='https://img.shields.io/badge/Feet-fff?style=for-the-badge' alt='Feet'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=50%>
+                                    <img src='https://img.shields.io/badge/Eye-fff?style=for-the-badge' alt='Eye'>
+                                </td>
+                                <td colspan=50%>
+                                    <img src='https://img.shields.io/badge/Amount-fff?style=for-the-badge' alt='Amount'>
+                                    <img src='https://img.shields.io/badge/Type-fff?style=for-the-badge' alt='Type'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=100%>
+                                    <img src='https://img.shields.io/badge/Weapon-fff?style=for-the-badge' alt='Weapon'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=50%>
+                                    <img src='https://img.shields.io/badge/Element-fff?style=for-the-badge'
+                                        alt='Element'>
+                                </td>
+                                <td colspan=50%>
+                                    <img src='https://img.shields.io/badge/Fire-f00?style=for-the-badge' alt='Fire'>
+                                    <img src='https://img.shields.io/badge/Earth-f80?style=for-the-badge' alt='Earth'>
+                                    <img src='https://img.shields.io/badge/Lightning-ff0?style=for-the-badge' alt='Lightning'>
+                                    <br>
+                                    <img src='https://img.shields.io/badge/Toxic-0f0?style=for-the-badge' alt='Toxic'>
+                                    <img src='https://img.shields.io/badge/Water-00f?style=for-the-badge' alt='Water'>
+                                    <img src='https://img.shields.io/badge/Undead-80f?style=for-the-badge' alt='Undead'>
+                                    <br>
+                                    <img src='https://img.shields.io/badge/Light-fff?style=for-the-badge' alt='Light'>
+                                    <img src='https://img.shields.io/badge/Air-888?style=for-the-badge' alt='Air'>
+                                    <img src='https://img.shields.io/badge/Dark-000?style=for-the-badge' alt='Dark'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=50%>
+                                    <img src='https://img.shields.io/badge/Emitter-fff?style=for-the-badge'
+                                        alt='Emitter'>
+                                </td>
+                                <td colspan=50%>
+                                    <img src='https://img.shields.io/badge/Breath-fff?style=for-the-badge' alt='Breath'>
+                                    <img src='https://img.shields.io/badge/Tail-fff?style=for-the-badge' alt='Tail'><br>
+                                    <img src='https://img.shields.io/badge/Teeth-fff?style=for-the-badge' alt='Teeth'>
+                                    <img src='https://img.shields.io/badge/Claws-fff?style=for-the-badge' alt='Claws'>
                                 </td>
                             </tr>
                         </table>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>Hybrids Fight In The Arena</td>
-                    <td>
+                    </li>
+                </ul>
+                <li>
+                    <img src='https://img.shields.io/badge/Traits Define Stats-fff?style=for-the-badge'
+                        alt='Traits Define Stats'>
+                </li>
+            </ul>
+            <li>
+                <img src='https://img.shields.io/badge/NPCs Commission Hybrids-fff?style=for-the-badge'
+                    alt='NPCs Commission Hybrids'>
+            </li>
+            <ul>
+                <li>
+                    <img src='https://img.shields.io/badge/Better Hybrids-fff?style=for-the-badge' alt='Better Hybrids'>
+                </li>
+                <ul>
+                    <li>
+                        <img src='https://img.shields.io/badge/More Money-fff?style=for-the-badge' alt='More Money'>
+                    </li>
+                </ul>
+            </ul>
+            <li>
+                <img src='https://img.shields.io/badge/Hybrids Fight In The Arena-fff?style=for-the-badge'
+                    alt='Hybrids Fight In The Arena'>
+            </li>
+            <ul>
+                <li>
+                    <img src='https://img.shields.io/badge/Win Fights To Go Up In Rank-fff?style=for-the-badge'
+                        alt='Win Fights To Go Up In Rank'>
+                </li>
+                <ul>
+                    <li>
+                        <img src='https://img.shields.io/badge/Ranks-fff?style=for-the-badge' alt='Ranks'>
+                    </li>
+                    <ul>
+                        <li>
+                            <img src='https://img.shields.io/badge/Roman Numerals-fff?style=for-the-badge'
+                                alt='Roman Numerals'>
+                        </li>
+                    </ul>
+                    <li>
+                        <img src='https://img.shields.io/badge/Higher Rank-fff?style=for-the-badge' alt='Higher Rank'>
+                    </li>
+                    <ul>
+                        <li>
+                            <table>
+                                <tr>
+                                    <th rowspan=100%>
+                                        <img src='https://img.shields.io/badge/More Rewards-fff?style=for-the-badge'
+                                            alt='More Rewards'>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan=100%>
+                                        <img src='https://img.shields.io/badge/Money-fff?style=for-the-badge'
+                                            alt='Money'>
+                                        <img src='https://img.shields.io/badge/Eggs-fff?style=for-the-badge' alt='Eggs'>
+                                        <img src='https://img.shields.io/badge/Boosts-fff?style=for-the-badge'
+                                            alt='Boosts'>
+                                        <br>
+                                        <img src='https://img.shields.io/badge/Discounts-fff?style=for-the-badge'
+                                            alt='Discounts'>
+                                        <img src='https://img.shields.io/badge/Etc.-fff?style=for-the-badge' alt='Etc.'>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>
+                <img src='https://img.shields.io/badge/Fulfill Commissions/Battle For Money-fff?style=for-the-badge'
+                    alt='Fulfill Commissions/Battle For Money'>
+            </li>
+            <ul>
+                <li>
+                    <img src='https://img.shields.io/badge/Buy Eggs With Money-fff?style=for-the-badge'
+                        alt='Buy Eggs With Money'>
+                </li>
+                <ul>
+                    <li>
+                        <img src='https://img.shields.io/badge/Hatch Eggs Into New Animals To Breed-fff?style=for-the-badge'
+                            alt='Hatch Eggs Into New Animals To Breed'>
+                    </li>
+                </ul>
+            </ul>
+            <li>
+                <img src='https://img.shields.io/badge/Breed Rarer Hybrids-fff?style=for-the-badge'
+                    alt='Breed Rarer Hybrids'>
+            </li>
+            <ul>
+                <li>
+                    <img src='https://img.shields.io/badge/Increase Player Tier-fff?style=for-the-badge'
+                        alt='Increase Player Tier'>
+                </li>
+                <ul>
+                    <li>
                         <table>
                             <tr>
-                                <td>Win Fights To Go Up In Rank</td>
+                                <th rowspan=100%>
+                                    <img src='https://img.shields.io/badge/Tiers-fff?style=for-the-badge' alt='Tiers'>
+                                </th>
+                            </tr>
+                            <tr>
                                 <td>
-                                    <table>
-                                        <tr>
-                                            <td>Ranks</td>
-                                            <td>
-                                                <table>
-                                                    <tr>
-                                                        <td>Roman Numerals</td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Higher Rank</td>
-                                            <td>
-                                                <table>
-                                                    <tr>
-                                                        <td>More Rewards</td>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td><kbd>Money</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Eggs</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Boosts</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Discounts</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Etc.</kbd></td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <img src='https://img.shields.io/badge/I-f00?style=for-the-badge' alt='I'>
+                                    <img src='https://img.shields.io/badge/II-f80?style=for-the-badge' alt='II'>
+                                    <img src='https://img.shields.io/badge/III-ff0?style=for-the-badge' alt='III'><br>
+                                    <img src='https://img.shields.io/badge/IV-0f0?style=for-the-badge' alt='IV'>
+                                    <img src='https://img.shields.io/badge/V-00f?style=for-the-badge' alt='V'>
+                                    <img src='https://img.shields.io/badge/VI-80f?style=for-the-badge' alt='VI'>
                                 </td>
                             </tr>
                         </table>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>Fulfill Commissions/Battle For Money</td>
-                    <td>
+                    </li>
+                    <li>
                         <table>
                             <tr>
-                                <td>Buy Eggs With Money</td>
+                                <th colspan=100%>
+                                    <img src='https://img.shields.io/badge/Rarer Eggs In Shop-fff?style=for-the-badge'
+                                        alt='Rarer Eggs In Shop'>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th rowspan=100%>
+                                    <img src='https://img.shields.io/badge/Rarities-fff?style=for-the-badge'
+                                        alt='Rarities'>
+                                </th>
+                            </tr>
+                            <tr>
                                 <td>
-                                    <table>
-                                        <tr>
-                                            <td>Hatch Eggs Into New Animals To Breed</td>
-                                        </tr>
-                                    </table>
+                                    <img src='https://img.shields.io/badge/Common-f00?style=for-the-badge' alt='Common'>
+                                    <img src='https://img.shields.io/badge/Uncommon-f80?style=for-the-badge'
+                                        alt='Uncommon'>
+                                    <img src='https://img.shields.io/badge/Rare-ff0?style=for-the-badge' alt='Rare'><br>
+                                    <img src='https://img.shields.io/badge/Legendary-0f0?style=for-the-badge'
+                                        alt='Legendary'>
+                                    <img src='https://img.shields.io/badge/Mythical-00f?style=for-the-badge'
+                                        alt='Mythical'>
+                                    <img src='https://img.shields.io/badge/Deific-80f?style=for-the-badge' alt='Deific'>
                                 </td>
                             </tr>
                         </table>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>Breed Rarer Hybrids</td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>Increase Player Tier</td>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>Tiers</td>
-                                            <td>
-                                                <table>
-                                                    <tr>
-                                                        <td><kbd>I</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>II</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>III</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>IV</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>V</kbd></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><kbd>VI</kbd></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rarer Eggs In Shop</td>
-                                            <td>
-                                                <table>
-                                                    <tr>
-                                                        <td>Rarities</td>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td><kbd>Common</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Uncommon</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Rare</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Legendary</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Mythical</kbd></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><kbd>Deific</kbd></td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+                    </li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    </div>
